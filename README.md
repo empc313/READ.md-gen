@@ -11,6 +11,7 @@
 
 ## Contributing 
 <https://shields.io/>
+-Help from Justin Moore
 
 ## Tests 
 
