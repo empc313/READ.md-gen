@@ -1,10 +1,9 @@
-//  packages needed for this application
+// packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 //An array of questions for user input to generate a READme file
-//Need to validate the inpust somehow
 const questions = [
   //Question for Title
   {
@@ -17,12 +16,6 @@ const questions = [
     type: "input",
     name: "description",
     message: "Enter a description of your project.",
-  },
-  //Question for Table of Contents
-  {
-    type: "input",
-    name: "tableContents",
-    message: "Enter your Table of Contents.",
   },
   //Question for Installation
   {
@@ -41,21 +34,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Select a license for this READme.",
-    choices: [
-      "Apache 2.0",
-      "GNU GPLv3.0",
-      "MIT",
-      "BSD 2-Clause",
-      "BSD 3-Clause",
-      "Boost Software 1.0",
-      "Creative Commons Zero v1.0",
-      "Eclipse Public 2.0",
-      "GNU AGPLv3.0",
-      "GNU GPLv2.0",
-      "GNU LGPLv2.1",
-      "Mozilla Public 2.0",
-      "The Unlicense",
-    ],
+    choices: ["Apache 2.0", "GNU GPLv3.0", "MIT", "Mozilla Public 2.0", "None"],
   },
   //Question for Contributing
   {
@@ -69,18 +48,33 @@ const questions = [
     name: "tests",
     message: "Enter testing instructions for this repository",
   },
+  //Questions- github
+  {
+    type: "input",
+    name: "userName",
+    message: "Enter GitHub username.",
+  },
+  //Questions- email address
+  {
+    type: "input",
+    name: "email",
+    message: "Enter email address associated with your GitHub",
+  },
 ];
 
-// TODO: Create a function to write README file
+//a function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName);
 }
 
-// // TODO: Create a function to initialize app
-// function init() {
-//     inquirer.createPromptModule(questions)
-// }
+//function to initialize app and calls the generate markdown function
+function init() {
+  inquirer.prompt(questions).then((data) => {
+    const template = generateMarkdown(data);
+    console.log("Generating Markdown");
+    fs.writeFileSync("README.md", template);
+  });
+}
 
 // Function call to initialize app
-// init();
-console.log(questions)
+init();
