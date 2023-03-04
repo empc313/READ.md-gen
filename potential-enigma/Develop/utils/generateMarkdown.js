@@ -36,11 +36,9 @@ ${data.usage}
 ${data.contributing}
 ## Tests 
 ${data.tests}
-## Contact Information
-#Github Username- 
-${data.userName}
-#Email- 
-${data.email}
+## Questions
+### Github Username: [${data.userName}](https://www.github.com/${data.userName})
+### Email: ${data.email}
 `;
 }
 module.exports = generateMarkdown;
