@@ -1,5 +1,5 @@
 
-  #  ![License: None](https://img.shields.io/badge/License-None-lightgrey)
+  # READ.me Generator ![License: None](https://img.shields.io/badge/License-None-lightgrey)
 
   ## Table of Contents
   - [Installation](#-Installation)
@@ -10,13 +10,13 @@
   - [Questions](#-Info)
  
 ## Installation 
-
+node.js
 ## Usage 
-
+Input from users is generated into a READ.me file that is formatted for you
 ## Contributing 
-
+N/A
 ## Tests 
-
+N/A
 ## Questions
-### Github Username: [](https://www.github.com/)
-### Email: 
+### Github Username: [empc313](https://www.github.com/empc313)
+### Email: cemma313@gmail.com
