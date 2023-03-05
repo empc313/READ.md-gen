@@ -1,4 +1,4 @@
-# Professional README Generator 
+# Professional READ.md Generator 
 
 https://watch.screencastify.com/v/1KqLxrvnP4SGInOJGmSO
 
