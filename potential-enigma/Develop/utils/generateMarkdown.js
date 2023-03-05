@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
   } else if (license === "Mozilla Public 2.0") {
     return "[![License: MPL 2.0](https://img.shields.io/badge/License-Mozilla%20Public%202.0-yellow)](https://opensource.org/licenses/MPL-2.0)";
   } else if (license === "None") {
-    return "[![License: None](https://img.shields.io/badge/License-None-lightgrey)";
+    return "![License: None](https://img.shields.io/badge/License-None-lightgrey)";
   }
 }
 
