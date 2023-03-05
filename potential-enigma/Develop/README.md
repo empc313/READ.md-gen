@@ -12,7 +12,7 @@
 ## Installation 
 node.js
 ## Usage 
-Input from users is generated into a READ.me file that is formatted for you
+Input from users is generated into a READ.md file that is formatted for you
 ## Contributing 
 N/A
 ## Tests 
