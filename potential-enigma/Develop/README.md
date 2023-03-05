@@ -1,5 +1,5 @@
 
-  # READ.me Generator ![License: None](https://img.shields.io/badge/License-None-lightgrey)
+  # READ.md Generator ![License: None](https://img.shields.io/badge/License-None-lightgrey)
 
   ## Table of Contents
   - [Installation](#-Installation)
