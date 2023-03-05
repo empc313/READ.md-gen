@@ -21,12 +21,12 @@ function generateMarkdown(data) {
   # ${data.title} ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  [Installation](#-Installation)
-  [Usage](#-Usage)
-  [License](#-Installation)
-  [Contributing](#-Contributing)
-  [Tests](#-Tests)
-  [Questions](#-Info)
+  - [Installation](#-Installation)
+  - [Usage](#-Usage)
+  - [License](#-Installation)
+  - [Contributing](#-Contributing)
+  - [Tests](#-Tests)
+  - [Questions](#-Info)
  
 ## Installation 
 ${data.installation}
